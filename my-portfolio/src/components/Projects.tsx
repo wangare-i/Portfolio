@@ -1,36 +1,4 @@
-// src/components/Projects.tsx
-import { motion } from 'framer-motion';
-
-const blogPosts = [
-  {
-    title: 'Tracking Suspicious DNS Activity in AWS',
-    link: 'https://medium.com/@wangareirungu3/tracking-suspicious-dns-activity-in-aws-a-hands-on-guide-52ccef249302',
-    date: 'May 9, 2025',
-    summary:
-      'Set up DNS logging with VPC Flow Logs, Lambda, and CloudWatch to identify suspicious lookups in AWS environments.',
-  },
-  {
-    title: 'Deploying a Serverless 2048 GAME App with AWS EKS and Fargate',
-    link: 'https://medium.com/@wangareirungu3/deploying-a-serverless-2048-game-app-with-aws-eks-and-fargate-59d0da0c276b',
-    date: 'Apr 8, 2025',
-    summary:
-      'Used Fargate to deploy a containerized game on AWS EKS with scalable architecture and minimal infrastructure management.',
-  },
-  {
-    title: 'Kubernetes ConfigMaps & Secrets: Why Mounting is Better',
-    link: 'https://medium.com/@wangareirungu3/kubernetes-configmaps-secrets-why-mounting-is-better-than-environment-variables-454287a55fe5',
-    date: 'Mar 25, 2025',
-    summary:
-      'Explains why mounting secrets as files in Kubernetes improves security and flexibility over environment variables.',
-  },
-  {
-    title: 'Monitoring EC2 Instances with AWS Config: Ensuring Compliance with Monitoring Enabled',
-    link: 'https://medium.com/@wangareirungu3/monitoring-ec2-instances-with-aws-config-ensuring-compliance-with-monitoring-enabled-026f0b1c2b85',
-    date: 'Jul 21, 2024',
-    summary:
-      'A walk through the steps to set up AWS Config to detect compliant and non-compliant EC2 instances based on their monitoring status.',
-  },
-];
+import { motion } from "framer-motion";
 
 function Projects() {
   return (
@@ -43,39 +11,60 @@ function Projects() {
       className="py-20 bg-primary text-white"
     >
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-highlight mb-6">Projects</h2>
-        <div className="grid md:grid-cols-2 gap-10">
-          {/* Portfolio Projects */}
-          <div className="space-y-6">
-            {portfolioProjects.map((project, index) => (
-              <motion.div
-                key={index}
-                className="p-6 rounded-lg shadow-md border border-highlight bg-opacity-10 backdrop-blur-md"
-                whileHover={{ scale: 1.03 }}
-              >
-                <h3 className="text-xl font-semibold mb-2 text-accent">{project.title}</h3>
-                <p className="text-gray-300">{project.description}</p>
-              </motion.div>
-            ))}
+        <h2 className="text-3xl font-bold text-highlight mb-10">Projects</h2>
+        <div className="space-y-10">
+
+          {/* Project 1 */}
+          <div className="bg-opacity-5 border border-highlight p-6 rounded-md shadow-md backdrop-blur-sm">
+            <h3 className="text-xl font-semibold text-accent">Tracking Suspicious DNS Activity in AWS</h3>
+            <p className="text-sm text-gray-300 mb-2">May 9, 2025</p>
+            <p className="text-gray-300 mb-3">
+              Built a DNS monitoring solution using VPC Flow Logs, Lambda, and CloudWatch to flag suspicious domain lookups and improve security visibility.
+            </p>
+            <a
+              href="https://medium.com/@wangareirungu3/tracking-suspicious-dns-activity-in-aws-a-hands-on-guide-52ccef249302"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-highlight underline"
+            >
+              Read Full Article →
+            </a>
           </div>
 
-          {/* Blog Posts */}
-          <div className="space-y-6">
-            {blogPosts.map((post, index) => (
-              <motion.a
-                key={index}
-                href={post.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block p-6 rounded-lg shadow-md border border-highlight bg-opacity-10 backdrop-blur-md hover:shadow-lg transition"
-                whileHover={{ scale: 1.03 }}
-              >
-                <h3 className="text-xl font-semibold text-accent mb-2">{post.title}</h3>
-                <p className="text-sm text-gray-400 mb-2">{post.date}</p>
-                <p className="text-gray-200">{post.summary}</p>
-              </motion.a>
-            ))}
+          {/* Project 2 */}
+          <div className="bg-opacity-5 border border-highlight p-6 rounded-md shadow-md backdrop-blur-sm">
+            <h3 className="text-xl font-semibold text-accent">Deploying a Serverless 2048 Game App on AWS EKS</h3>
+            <p className="text-sm text-gray-300 mb-2">April 8, 2025</p>
+            <p className="text-gray-300 mb-3">
+              Containerized and deployed a 2048 game frontend on Amazon EKS using Fargate, with load balancing, monitoring,.
+            </p>
+            <a
+              href="https://medium.com/@wangareirungu3/deploying-a-serverless-2048-game-app-with-aws-eks-and-fargate-59d0da0c276b"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-highlight underline"
+            >
+              Read Full Article →
+            </a>
           </div>
+
+          {/* Project 3 */}
+          <div className="bg-opacity-5 border border-highlight p-6 rounded-md shadow-md backdrop-blur-sm">
+            <h3 className="text-xl font-semibold text-accent">Kubernetes ConfigMaps & Secrets: Best Practices</h3>
+            <p className="text-sm text-gray-300 mb-2">March 25, 2025</p>
+            <p className="text-gray-300 mb-3">
+              Explained why mounting secrets as volumes is safer and more flexible than environment variables when managing sensitive data in Kubernetes.
+            </p>
+            <a
+              href="https://medium.com/@wangareirungu3/kubernetes-configmaps-secrets-why-mounting-is-better-than-environment-variables-454287a55fe5"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-highlight underline"
+            >
+              Read Full Article →
+            </a>
+          </div>
+
         </div>
       </div>
     </motion.section>
