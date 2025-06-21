@@ -1,24 +1,6 @@
 // src/components/Projects.tsx
 import { motion } from 'framer-motion';
 
-const portfolioProjects = [
-  {
-    title: 'Tracking Suspicious DNS in AWS',
-    description:
-      'Built a hands-on DNS logging setup using VPC Flow Logs, CloudWatch, and Lambda for alerting.',
-  },
-  {
-    title: 'Web App on EKS (PoC)',
-    description:
-      'Deployed a full-stack containerized app using Amazon EKS + Fargate for orchestration and scalability.',
-  },
-  {
-    title: 'Telemedicine Backend',
-    description:
-      'Node.js + MySQL backend with patient registration, doctor scheduling, and appointment booking features.',
-  },
-];
-
 const blogPosts = [
   {
     title: 'Tracking Suspicious DNS Activity in AWS',
@@ -29,7 +11,7 @@ const blogPosts = [
   },
   {
     title: 'Deploying a Serverless 2048 GAME App with AWS EKS and Fargate',
-    link: 'https://medium.com/@wangareirungu3/kubernetes-configmaps-secrets-why-mounting-is-better-than-environment-variables-454287a55fe5',
+    link: 'https://medium.com/@wangareirungu3/deploying-a-serverless-2048-game-app-with-aws-eks-and-fargate-59d0da0c276b',
     date: 'Apr 8, 2025',
     summary:
       'Used Fargate to deploy a containerized game on AWS EKS with scalable architecture and minimal infrastructure management.',
@@ -40,6 +22,13 @@ const blogPosts = [
     date: 'Mar 25, 2025',
     summary:
       'Explains why mounting secrets as files in Kubernetes improves security and flexibility over environment variables.',
+  },
+  {
+    title: 'Monitoring EC2 Instances with AWS Config: Ensuring Compliance with Monitoring Enabled',
+    link: 'https://medium.com/@wangareirungu3/monitoring-ec2-instances-with-aws-config-ensuring-compliance-with-monitoring-enabled-026f0b1c2b85',
+    date: 'Jul 21, 2024',
+    summary:
+      'A walk through the steps to set up AWS Config to detect compliant and non-compliant EC2 instances based on their monitoring status.',
   },
 ];
 
