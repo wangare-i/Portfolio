@@ -36,7 +36,7 @@ function Blog() {
       className="py-20 bg-primary text-white"
     >
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-highlight mb-8">Blog Highlights</h2>
+        <h2 className="text-3xl font-bold text-highlight mb-8">Projects</h2>
         <div className="grid md:grid-cols-2 gap-8">
           {blogPosts.map((post, index) => (
             <a
