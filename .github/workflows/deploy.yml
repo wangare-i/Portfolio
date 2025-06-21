@@ -20,9 +20,11 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: ./my-portfolio
 
       - name: Build the project
         run: npm run build
+        working-directory: ./my-portfolio
 
       - name: Upload to S3
         run: |
