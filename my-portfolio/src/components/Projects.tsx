@@ -1,5 +1,23 @@
-// src/components/Blog.tsx
+// src/components/Projects.tsx
 import { motion } from 'framer-motion';
+
+const portfolioProjects = [
+  {
+    title: 'Tracking Suspicious DNS in AWS',
+    description:
+      'Built a hands-on DNS logging setup using VPC Flow Logs, CloudWatch, and Lambda for alerting.',
+  },
+  {
+    title: 'Web App on EKS (PoC)',
+    description:
+      'Deployed a full-stack containerized app using Amazon EKS + Fargate for orchestration and scalability.',
+  },
+  {
+    title: 'Telemedicine Backend',
+    description:
+      'Node.js + MySQL backend with patient registration, doctor scheduling, and appointment booking features.',
+  },
+];
 
 const blogPosts = [
   {
@@ -25,10 +43,10 @@ const blogPosts = [
   },
 ];
 
-function Blog() {
+function Projects() {
   return (
     <motion.section
-      id="blog"
+      id="projects"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
@@ -36,25 +54,43 @@ function Blog() {
       className="py-20 bg-primary text-white"
     >
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-highlight mb-8">Projects</h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          {blogPosts.map((post, index) => (
-            <a
-              key={index}
-              href={post.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block p-6 bg-opacity-10 backdrop-blur-md rounded-lg shadow border border-highlight hover:shadow-lg transition"
-            >
-              <h3 className="text-xl font-semibold text-accent mb-2">{post.title}</h3>
-              <p className="text-sm text-gray-400 mb-2">{post.date}</p>
-              <p className="text-gray-200">{post.summary}</p>
-            </a>
-          ))}
+        <h2 className="text-3xl font-bold text-highlight mb-6">Projects</h2>
+        <div className="grid md:grid-cols-2 gap-10">
+          {/* Portfolio Projects */}
+          <div className="space-y-6">
+            {portfolioProjects.map((project, index) => (
+              <motion.div
+                key={index}
+                className="p-6 rounded-lg shadow-md border border-highlight bg-opacity-10 backdrop-blur-md"
+                whileHover={{ scale: 1.03 }}
+              >
+                <h3 className="text-xl font-semibold mb-2 text-accent">{project.title}</h3>
+                <p className="text-gray-300">{project.description}</p>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Blog Posts */}
+          <div className="space-y-6">
+            {blogPosts.map((post, index) => (
+              <motion.a
+                key={index}
+                href={post.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block p-6 rounded-lg shadow-md border border-highlight bg-opacity-10 backdrop-blur-md hover:shadow-lg transition"
+                whileHover={{ scale: 1.03 }}
+              >
+                <h3 className="text-xl font-semibold text-accent mb-2">{post.title}</h3>
+                <p className="text-sm text-gray-400 mb-2">{post.date}</p>
+                <p className="text-gray-200">{post.summary}</p>
+              </motion.a>
+            ))}
+          </div>
         </div>
       </div>
     </motion.section>
   );
 }
 
-export default Blog;
+export default Projects;

@@ -23,12 +23,7 @@ function About() {
 
             I hold certifications in AWS Solutions Architect and Kubernetes (KCNA) and have worked with tools like Docker, Kubernetes, JMeter, Playwright, and CI/CD pipelines. I’m passionate about making technology dependable and enjoy solving real-world problems through testing, monitoring, and continuous learning.
 
-
-    .
-
             </p>
-
-
 
 
 
