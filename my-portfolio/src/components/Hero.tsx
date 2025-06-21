@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function Hero() {
   return (
-    <section className="bg-primary py-20 text-white">
+    <motion.section className="bg-primary py-20 text-white">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6 md:gap-10">
         {/* Left: Text */}
         <div className="md:w-1/2 text-center md:text-left">
@@ -16,8 +16,6 @@ function Hero() {
             I specialize in building secure, reliable, and scalable cloud-native systems. With hands-on experience in software testing, DevOps practices, and AWS infrastructure, I blend quality assurance with automation to streamline development and delivery.
 
             I hold certifications in AWS Solutions Architect and Kubernetes (KCNA) and have worked with tools like Docker, Kubernetes, JMeter, Playwright, and CI/CD pipelines. I’m passionate about making technology dependable and enjoy solving real-world problems through testing, monitoring, and continuous learning.
-
-
           </p>
           <a
             href="#contact"
@@ -36,7 +34,7 @@ function Hero() {
           />
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 
