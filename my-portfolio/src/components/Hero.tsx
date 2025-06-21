@@ -11,11 +11,14 @@ function Hero() {
             Hi, I'm Josephine
           </h1>
           <p className="text-gray-300 mb-4 text-lg leading-relaxed">
-            AWS Solutions Architect | DevOps & QA Engineer
+            AWS Solutions Architect | DevOps & QA Engineer<br></br>
 
-            I specialize in building secure, reliable, and scalable cloud-native systems. With hands-on experience in software testing, DevOps practices, and AWS infrastructure, I blend quality assurance with automation to streamline development and delivery.
+                    Hey, I’m Wangare Irungu  Josephine.
+                I’m into cloud engineering, DevOps, and software Quality.
+                I love clean systems, reliable deployments, and tools that make life easier.
+                Welcome to my portfolio -here is a glimpse of what I’ve been working on.
 
-            I hold certifications in AWS Solutions Architect and Kubernetes (KCNA) and have worked with tools like Docker, Kubernetes, JMeter, Playwright, and CI/CD pipelines. I’m passionate about making technology dependable and enjoy solving real-world problems through testing, monitoring, and continuous learning.
+            
           </p>
           <a
             href="#contact"
