@@ -5,6 +5,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Experience from './components/Experience';
 import Certifications from './components/Certifications';
+import TechStack from './components/TechStack';
 import ShootingStars from './components/ShootingStars';
 import TwinklingStars from './components/TwinklingStars';
 
@@ -20,6 +21,7 @@ function App() {
       <Experience />
       <Certifications />
       <Projects />
+      <TechStack />
       <Contact />
     </div>
   );
