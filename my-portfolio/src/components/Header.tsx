@@ -10,6 +10,7 @@ function Header() {
     { name: "Experience", href: "#experience" },
     { name: "Projects", href: "#projects" },
     { name: "Certifications", href: "#certifications" },
+    { name: "Tech Stack", href: "#tech" },
     { name: "Contact", href: "#contact" },
   ];
 

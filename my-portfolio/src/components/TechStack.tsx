@@ -36,7 +36,7 @@ function TechStack() {
       className="py-20 bg-primary text-white"
     >
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-highlight mb-10">Tools & Technologies</h2>
+        <h2 className="text-3xl font-bold text-highlight mb-10">Tools & Technology Stack</h2>
         <div className="grid grid-cols-3 md:grid-cols-4 gap-6 text-center">
           {tools.map((tool, idx) => (
             <div
